@@ -5,6 +5,7 @@ import { useState } from "react"
 
 function App() {
  const [tasks, setTasks] = useState(initialTasks);
+ //here reducer will be used.
  const handleAddTask = (task) => {
    setTasks([...tasks, {id: crypto.randomUUID(), text: task, done: false}])
  }
