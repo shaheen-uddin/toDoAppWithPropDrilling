@@ -3,7 +3,7 @@ export default function AddTask({ onAdd }) {
   const [name, setName] = useState("");
    
   return (
-    <div className="flex gap-1">
+    <div className="flex gap-1 justify-center">
       <input type="text" className="border rounded-md w-64"
       placeholder="Add name"
       value={name}
